@@ -1,7 +1,13 @@
-import { GameLayout } from './components/GameLayout/GameLayout';
-import { useState } from 'react';
-export const App = () => {
+import { Header } from "./components/Header/Header";
+import { TasksList } from "./components/TasksList/TaskList";
+
+function App() {
 	return (
-		<GameLayout/>
+		<>
+			<Header/>
+			<TasksList/>
+		</>
 	);
-};
+}
+
+export default App;
